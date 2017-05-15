@@ -1,0 +1,12 @@
+[ubifs]
+     mode=ubi
+ 	 image=ubifs.img
+ 	 vol_id=0
+	 vol_size=216MiB
+	 vol_type=dynamic
+ 	 vol_name=rootfs
+ 	 vol_flags=autoresize
+#bootcmd=nboot 0x7fc0 0 0x200000\;bootm 0x7fc0
+#bootargs=mem=64M console=ttyS0,115200n8 rdinit=/sbin/init mtdparts=nand0:16M(boot)ro,-(rootfs)  rootfstype=ubifs ubi.mtd=1 root=ubi0_0
+#light uboot
+#
